@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body{
-	font-size: 24px;
+	font-size: 45px;
 	font-family: 'Work Sans', sans-serif;
 	color: #333;
   font-weight: 300;
@@ -12,13 +12,13 @@ h1{
   font-weight: 300;
   margin: 20px;
   padding: 15px;
-  font-size: 20px;
+  font-size: 50px;
   background-color: #444;
   color: #fff;
 }
 .question{
-  font-size: 30px;
-  margin-bottom: 25px;
+  font-size: 65px;
+  margin-bottom: 40px;
 }
 .answers {
   margin-bottom: 30px;
@@ -31,7 +31,7 @@ h1{
 }
 button{
   font-family: 'Work Sans', sans-serif;
-	font-size: 25px;
+	font-size: 50px;
 	background-color: rgb(175, 109, 171);
 	color: #fff;
 	border: 0px;
@@ -56,7 +56,7 @@ input[type=radio]:checked {
    box-shadow: 0px 0px 0px 3px #fdfbfb inset;
 }
 .slide{
-  position: absolute;
+ position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -70,6 +70,6 @@ input[type=radio]:checked {
 }
 .quiz-container{
   position: relative;
-  height: 200px;
+  height: 500px;
   margin-top: 40px;
 }

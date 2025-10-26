@@ -64,21 +64,21 @@
         numCorrect++;
 
         // color the answers green
-        answerContainers[questionNumber].style.color = 'lightgreen';
+        answerContainers[questionNumber].style.color = 'darkgreen';
       }
       // if answer is wrong or blank
       else{
         // color the answers red
-        answerContainers[questionNumber].style.color = 'red';
+        answerContainers[questionNumber].style.color = 'maroon';
       }
     });
 
     // show number of correct answers out of total
     if (myQuestions.length != numCorrect) {
-      resultsContainer.innerHTML = `${numCorrect} oikein ${myQuestions.length} kysymyksestä. Voit siirtyä edellisiin kysymyksiin nähdäksesi mitkä kannattaa korjata. Vastausten väri vaihtuu oikeaksi vasta menemällä loppuun uudestaan ja valitsemalla Tarkista`;
+      resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä. <br><br>Voit siirtyä edellisiin kysymyksiin nähdäksesi mitkä kannattaa korjata. <br><br>Vastausten väri vaihtuu oikeaksi vasta menemällä loppuun uudestaan ja valitsemalla Tarkista`;
 
     } else {
-      resultsContainer.innerHTML = `${numCorrect} oikein ${myQuestions.length} kysymyksestä`;
+      resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä`;
 
     }
   }
@@ -122,7 +122,8 @@
       answers: {
         a: "Are you a mouse?",
         b: "Are you mouse?",
-        c: "Are you moude?"
+        c: "Are you moude?",
+        d: "Where is a moude?"
       },
       correctAnswer: "a"
     },
