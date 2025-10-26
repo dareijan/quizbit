@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body{
-	font-size: 20px;
+	font-size: 24px;
 	font-family: 'Work Sans', sans-serif;
 	color: #333;
   font-weight: 300;
@@ -18,7 +18,7 @@ h1{
 }
 .question{
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .answers {
   margin-bottom: 30px;
@@ -31,7 +31,7 @@ h1{
 }
 button{
   font-family: 'Work Sans', sans-serif;
-	font-size: 30px;
+	font-size: 25px;
 	background-color: rgb(175, 109, 171);
 	color: #fff;
 	border: 0px;
@@ -40,14 +40,21 @@ button{
 	cursor: pointer;
 	margin-bottom: 20px;
 }
+
 button:hover{
 	background-color: rgb(166, 73, 160);
 }
 
+input[type=radio] {
+  width: 17px;
+  height: 17px;
+  border: 2px solid #e6e5e5;
+}
 
-
-
-
+input[type=radio]:checked {
+   background-color:rgb(166, 73, 160);  
+   box-shadow: 0px 0px 0px 3px #fdfbfb inset;
+}
 .slide{
   position: absolute;
   left: 0px;

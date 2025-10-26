@@ -1,9 +1,11 @@
 (function(){
   
-  import myQuestions from './questions.json' with { type: "json" };
+  //import myQuestions from './questions.json' with { type: "json" };
 
   // Functions
   function buildQuiz(){
+
+
     // variable to store the HTML output
     const output = [];
 
@@ -21,7 +23,6 @@
           answers.push(
             `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
               ${currentQuestion.answers[letter]}
             </label>`
           );
@@ -73,7 +74,13 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    if (myQuestions.length != numCorrect) {
+      resultsContainer.innerHTML = `${numCorrect} oikein ${myQuestions.length} kysymyksestä. Voit siirtyä edellisiin kysymyksiin nähdäksesi mitkä kannattaa korjata. Vastausten väri vaihtuu oikeaksi vasta menemällä loppuun uudestaan ja valitsemalla Tarkista`;
+
+    } else {
+      resultsContainer.innerHTML = `${numCorrect} oikein ${myQuestions.length} kysymyksestä`;
+
+    }
   }
 
   function showSlide(n) {
@@ -108,38 +115,109 @@
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
-  /*
+
   const myQuestions = [
     {
-      question: "Who invented JavaScript?",
+      question: "Oletko hiiri?",
       answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich"
+        a: "Are you a mouse?",
+        b: "Are you mouse?",
+        c: "Are you moude?"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Olohuone",
+      answers: {
+        a: "A livingroom",
+        b: "A bathroom",
+        c: "An livingroom"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Ravintola",
+      answers: {
+        a: "A hall",
+        b: "An airport",
+        c: "A restaurant"
       },
       correctAnswer: "c"
     },
     {
-      question: "Which one of these is a JavaScript package manager?",
+      question: "Hän ei ole koulussa",
       answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm"
+        a: "He not cool",
+        b: "She is in the school",
+        c: "She is not in the school"
       },
       correctAnswer: "c"
     },
     {
-      question: "Which tool can you use to ensure code quality?",
+      question: "Tall",
       answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint"
+        a: "Vahva",
+        b: "Pitkä",
+        c: "Nopea"
       },
-      correctAnswer: "d"
-    }
-  ];
-  */
+      correctAnswer: "b"
+    },
+    {
+      question: "Sorry is he in a zoo?",
+      answers: {
+        a: "Anteeksi onko hän eläintarhassa?",
+        b: "Anteeksi onko hän keittiössä?",
+        c: "Anteeksi onko hän ullakolla?"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Hän on elokuvissa",
+      answers: {
+        a: "She is at the zoo",
+        b: "He is behind the sofa",
+        c: "He is at the cinema"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Tuoli on pöydän takana",
+      answers: {
+        a: "A chair is in table",
+        b: "A chair is at the table",
+        c: "A chair is behind a table"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Quiet",
+      answers: {
+        a: "Äänekäs",
+        b: "Nopea",
+        c: "Hiljainen"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "A loud mouse is in the attic",
+      answers: {
+        a: "Hiljainen hiiri on eteisessä",
+        b: "Äänekäs hiiri on ullakolla",
+        c: "Äänekäs hiiri on ullakon alla"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "Pallo on keittiössä",
+      answers: {
+        a: "A ball is in the kitchen",
+        b: "A ball is at the kitchen",
+        c: "A ball is on the kitchen"
+      },
+      correctAnswer: "a"
+    }                            
+];    
+
   // Kick things off
   buildQuiz();
 
