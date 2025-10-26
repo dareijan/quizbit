@@ -1,6 +1,6 @@
 (function(){
   
-  import myQuestions from './questions.json'; //with path
+  import myQuestions from './questions.json' with { type: "json" };
 
   // Functions
   function buildQuiz(){
