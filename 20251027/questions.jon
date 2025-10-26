@@ -1,0 +1,35 @@
+   [
+    {
+      question: "Oletko sinä hiiri?",
+      answers: {
+        a: "Are you a mouse?",
+        b: "Are you mouse?",
+        c: "Are you moude?",
+        d: "Where is a mouse?"
+        e: "Mouse are you"
+
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Missä?",
+      answers: {
+        a: "Here",
+        b: "Where",
+        c: "There",
+        d: "Mere",
+        e: "Gere"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "Ravintola",
+      answers: {
+        a: "A hall",
+        b: "An airport",
+        c: "A restaurant",
+        d: "A ball"
+      },
+      correctAnswer: "c"
+    }
+]
