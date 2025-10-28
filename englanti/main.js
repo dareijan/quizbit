@@ -1,15 +1,28 @@
 (function(){
   
-  //import myQuestions from './questions.json' with { type: "json" };
-
   // Functions
   function buildQuiz(){
 
-
     // variable to store the HTML output
     const output = [];
+    var first_visit = false;
+    checkFirstVisit();
+    function checkFirstVisit(){
+        //if(localStorage.getItem('oltiin täällä')){
+         //   return;
+        //}
+        first_visit = true;
+        //localStorage.setItem('oltiin täällä', 1);
+        if(!localStorage.getItem('myQuestions')){
+          const questions = JSON.stringify(questions20251027)
+          localStorage.setItem('myQuestions', questions);
+        }
 
+    }
+    console.log(first_visit);
     // for each question...
+    questions = localStorage.getItem('myQuestions');
+    const myQuestions = JSON.parse(questions);
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
 
@@ -51,6 +64,8 @@
     let numCorrect = 0;
 
     // for each question...
+    const questions = localStorage.getItem('myQuestions');
+    const myQuestions = JSON.parse(questions);
     myQuestions.forEach( (currentQuestion, questionNumber) => {
 
       // find selected answer
@@ -74,6 +89,7 @@
     });
 
     // show number of correct answers out of total
+
     if (myQuestions.length != numCorrect) {
       resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä. <br><br>Voit siirtyä edellisiin kysymyksiin nähdäksesi mitkä kannattaa korjata. <br><br>Vastausten väri vaihtuu oikeaksi vasta menemällä loppuun uudestaan ja valitsemalla Tarkista`;
 
@@ -116,109 +132,6 @@
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
 
-  const myQuestions = [
-    {
-      question: "Oletko hiiri?",
-      answers: {
-        a: "Are you a mouse?",
-        b: "Are you mouse?",
-        c: "Are you moude?",
-        d: "Where is a moude?"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "Olohuone",
-      answers: {
-        a: "A livingroom",
-        b: "A bathroom",
-        c: "An livingroom"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "Ravintola",
-      answers: {
-        a: "A hall",
-        b: "An airport",
-        c: "A restaurant"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Hän ei ole koulussa",
-      answers: {
-        a: "He not cool",
-        b: "She is in the school",
-        c: "She is not in the school"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Tall",
-      answers: {
-        a: "Vahva",
-        b: "Pitkä",
-        c: "Nopea"
-      },
-      correctAnswer: "b"
-    },
-    {
-      question: "Sorry is he in a zoo?",
-      answers: {
-        a: "Anteeksi onko hän eläintarhassa?",
-        b: "Anteeksi onko hän keittiössä?",
-        c: "Anteeksi onko hän ullakolla?"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "Hän on elokuvissa",
-      answers: {
-        a: "She is at the zoo",
-        b: "He is behind the sofa",
-        c: "He is at the cinema"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Tuoli on pöydän takana",
-      answers: {
-        a: "A chair is in table",
-        b: "A chair is at the table",
-        c: "A chair is behind a table"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Quiet",
-      answers: {
-        a: "Äänekäs",
-        b: "Nopea",
-        c: "Hiljainen"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "A loud mouse is in the attic",
-      answers: {
-        a: "Hiljainen hiiri on eteisessä",
-        b: "Äänekäs hiiri on ullakolla",
-        c: "Äänekäs hiiri on ullakon alla"
-      },
-      correctAnswer: "b"
-    },
-    {
-      question: "Pallo on keittiössä",
-      answers: {
-        a: "A ball is in the kitchen",
-        b: "A ball is at the kitchen",
-        c: "A ball is on the kitchen"
-      },
-      correctAnswer: "a"
-    }                            
-];    
-
   // Kick things off
   buildQuiz();
 
@@ -235,4 +148,50 @@
   submitButton.addEventListener('click', showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
+
+
+  $('a').click(function() { 
+    //alert(this.search);
+    loader(this.search);  
+    return false; 
+});
+
+
+function loader(visaparameter) {
+
+    // extract link's parameter
+    visa = visaparameter.substring(1);
+    visa = visa.slice(0, -3); 
+
+    // put quizes here
+    switch (visa) {
+        case "20251027":
+         questionsObject = questions20251027;
+         break;
+        case "202511X":
+         questionsObject = questions202511X;
+         break;
+    }
+        try {
+            const questions = JSON.stringify(questionsObject);
+
+            localStorage.setItem('myQuestions', questions);
+            var myQuestions = JSON.parse(questions)
+            // variable to store the HTML output
+
+            window.location.reload();
+
+
+                    // for each question...
+        } catch (error) {
+            console.error("Error caught:", error);
+        }
+        
+
+
+//You can now access the json variable's object data like this json.a and json.c
+console.log(visa);
+}
+
+  
 })();

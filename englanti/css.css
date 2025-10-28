@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body{
-	font-size: 45px;
+	font-size: 35px;
 	font-family: 'Work Sans', sans-serif;
 	color: #333;
   font-weight: 300;
@@ -11,8 +11,8 @@ body{
 h1{
   font-weight: 300;
   margin: 20px;
-  padding: 15px;
-  font-size: 50px;
+  padding: 12px;
+  font-size: 30px;
   background-color: #444;
   color: #fff;
 }
@@ -70,6 +70,11 @@ input[type=radio]:checked {
 }
 .quiz-container{
   position: relative;
-  height: 500px;
-  margin-top: 40px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color:  rgb(175, 109, 171);yy
 }
