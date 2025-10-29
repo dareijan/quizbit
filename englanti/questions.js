@@ -310,16 +310,6 @@ const questions202511Y = [
       d: "Roosa pelaa korttipeliä"
     },
     correctAnswer: "d"
-  },
-  {
-    question: "Nikita on nopea, Rocky on nuori, Star ei ole hidas",
-    answers: {
-      a: "Nikita is fast, Rocky is young, Star is not slow",
-      b: "Nikita isn't fast, Rocky isn't young, Star is slow",
-      c: "Nikita is fast, Rocky is young, Star isn't slow",
-      d: "Nikita is fast, Rocky is fast, Star isn't slow"
-    },
-    correctAnswer: "c"
   }
 ]
 
@@ -343,5 +333,15 @@ const questions202511Z = [
       d: "Auta pientä hamsteria joka on pöydän alla"
     },
     correctAnswer: "d"
+  },
+  {
+    question: "Nikita on nopea, Rocky on nuori, Star ei ole hidas",
+    answers: {
+      a: "Nikita is fast, Rocky is young, Star is not slow",
+      b: "Nikita isn't fast, Rocky isn't young, Star is slow",
+      c: "Nikita is fast, Rocky is young, Star isn't slow",
+      d: "Nikita is fast, Rocky is fast, Star isn't slow"
+    },
+    correctAnswer: "c"
   }
   ];
