@@ -292,16 +292,6 @@ const questions202511Y = [
     correctAnswer: "b"
   },
   {
-    question: "Star _____ to Rambo's stable (talli)",
-    answers: {
-      a: "come",
-      b: "be",
-      c: "listen",
-      d: "ask"
-    },
-    correctAnswer: "a"
-  },
-  {
     question: "Roosa play card",
     answers: {
       a: "Roosa pelaa karttingia",
