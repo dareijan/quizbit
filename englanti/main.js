@@ -2,6 +2,7 @@
   
   // Functions
   function buildQuiz(){
+    try {
 
     // variable to store the HTML output
     const output = [];
@@ -53,6 +54,10 @@
 
     // finally combine our output list into one string of HTML and put it on the page
     quizContainer.innerHTML = output.join('');
+
+            } catch (error) {
+            console.error("Error caught:", error);
+        }
   }
 
   function showResults(){
@@ -91,12 +96,13 @@
     // show number of correct answers out of total
 
     if (myQuestions.length != numCorrect) {
-      resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä. <br><br>Voit siirtyä edellisiin kysymyksiin nähdäksesi mitkä kannattaa korjata. <br><br>Vastausten väri vaihtuu oikeaksi vasta menemällä loppuun uudestaan ja valitsemalla Tarkista`;
+      resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä. <br><br>Voit siirtyä edellisiin kysymyksiin <br>nähdäksesi mitkä kannattaa korjata. <br><br>Vastausten väri vaihtuu oikeaksi vasta menemällä <br>loppuun uudestaan ja valitsemalla Tarkista<br>`;
 
     } else {
       resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä`;
-
     }
+
+
   }
 
   function showSlide(n) {
@@ -149,48 +155,44 @@
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 
-
   $('a').click(function() { 
     //alert(this.search);
     loader(this.search);  
-    return false; 
-});
+   // return false; 
+  });
 
 
 function loader(visaparameter) {
 
-    // extract link's parameter
-    visa = visaparameter.substring(1);
-    visa = visa.slice(0, -3); 
+  // extract link's parameter
+  visa = visaparameter.substring(1);
 
-    // put quizes here
-    switch (visa) {
-        case "20251027":
-         questionsObject = questions20251027;
-         break;
-        case "202511X":
-         questionsObject = questions202511X;
-         break;
-    }
-        try {
-            const questions = JSON.stringify(questionsObject);
+  // put quizes here
+  switch (visa) {
+      case "20251027":
+        questionsObject = questions20251027;
+        break;
+      case "202511X":
+        questionsObject = questions202511X;
+        break;
+      case "202511Y":
+        questionsObject = questions202511Y;
+        break;
+      case "202511Z":
+        questionsObject = questions202511Z;
+        break;         
+  }
+  const questions = JSON.stringify(questionsObject);
 
-            localStorage.setItem('myQuestions', questions);
-            var myQuestions = JSON.parse(questions)
-            // variable to store the HTML output
+  localStorage.setItem('myQuestions', questions);
+  var myQuestions = JSON.parse(questions)
+  // variable to store the HTML output
 
-            window.location.reload();
-
-
-                    // for each question...
-        } catch (error) {
-            console.error("Error caught:", error);
-        }
-        
+  window.location.reload();
 
 
-//You can now access the json variable's object data like this json.a and json.c
-console.log(visa);
+  //You can now access the json variable's object data like this json.a and json.c
+  console.log(visa);
 }
 
   

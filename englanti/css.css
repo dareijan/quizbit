@@ -1,38 +1,54 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body{
-	font-size: 35px;
+	font-size: 30px;
 	font-family: 'Work Sans', sans-serif;
 	color: #333;
   font-weight: 300;
   text-align: center;
   background-color: #f8f6f0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
+
 h1{
   font-weight: 300;
-  margin: 20px;
+  margin: 0px;
   padding: 12px;
-  font-size: 30px;
+  font-size: 20px;
   background-color: #444;
   color: #fff;
+
 }
 .question{
-  font-size: 65px;
-  margin-bottom: 40px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 4px;
 }
 .answers {
   margin-bottom: 30px;
+  padding: 25px;
   text-align: left;
   display: inline-block;
+  outline: none;
+  background-color: #f8f6f0;
+  opacity: 0.6;
+  letter-spacing: 1px;
+
 }
 .answers label{
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 button{
   font-family: 'Work Sans', sans-serif;
 	font-size: 50px;
-	background-color: rgb(175, 109, 171);
+	background-color: rgb(157, 96, 153);
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
@@ -40,20 +56,22 @@ button{
 	cursor: pointer;
 	margin-bottom: 20px;
 }
-
 button:hover{
-	background-color: rgb(166, 73, 160);
+	background-color:  rgb(108, 64, 105);
 }
-
 input[type=radio] {
-  width: 17px;
-  height: 17px;
-  border: 2px solid #e6e5e5;
-}
+  width: 27px;
+  height: 27px;
+  margin: 10;
+  font: inherit;
 
+  border: 0.em solid currentColor;
+  border-radius: 50%;
+  accent-color:  rgb(157, 96, 153);
+}
 input[type=radio]:checked {
-   background-color:rgb(166, 73, 160);  
-   box-shadow: 0px 0px 0px 3px #fdfbfb inset;
+   background-color: rgb(157, 96, 153);
+   box-shadow: 0px 0px 0px 0px rgb(157, 96, 153); inset;
 }
 .slide{
  position: absolute;
@@ -70,11 +88,47 @@ input[type=radio]:checked {
 }
 .quiz-container{
   position: relative;
-  height: 400px;
+  height: 450px;
   margin-top: 50px;
 }
-
 a {
   text-decoration: none;
-  color:  rgb(175, 109, 171);yy
+  font-weight:800;
+  color:  rgb(157, 96, 153);
+  text-decoration: underline;
+}
+a:hover {
+   color: rgb(108, 64, 105);
+}
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+#background {
+  width: 100%;
+  height: 100%;
+  background: url("pics/lockinen.jpg");no-repeat center center fixed;
+  background-color: rgba(147, 147, 147, 0.6);
+  background-blend-mode: lighten;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  -webkit-animation: myfirst 3s ; /* Chrome, Safari, Opera */
+  animation: myfirst s ;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {opacity: 0;}
+  to {opacity: 0.999;}
+}
+/* Standard syntax */
+@keyframes myfirst {
+  from {opacity: 0;}
+  to {opacity: 0.999;}
 }
