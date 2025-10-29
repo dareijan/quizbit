@@ -262,12 +262,12 @@ const questions202511Y = [
     correctAnswer: "b"
   },
   {
-    question: "Go and shout Calypso - Calypso is behind Moona.",
+    question: "Go and shout Calypso - Calypso is behind Moona",
     answers: {
-      a: "Mene ja huuda Calypsoa - Calypso on Moonan edessä.",
-      b: "Mene ja ääntele Calypso - Calypso Moonaa kantaa.",
-      c: "Huuda isosti Calypsoa - Calypso on Moonan takana.",
-      d: "Elehdi äänekkäästi Calypsoa - Calypso on takana."
+      a: "Mene ja huuda Calypsoa - Calypso on Moonan edessä",
+      b: "Mene ja ääntele Calypso - Calypso Moonaa kantaa",
+      c: "Huuda isosti Calypsoa - Calypso on Moonan takana",
+      d: "Elehdi äänekkäästi Calypsoa - Calypso on takana"
     },
     correctAnswer: "a"
   },
