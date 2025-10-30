@@ -242,12 +242,12 @@ const questions202511Y = [
     correctAnswer: "a"
   },
   {
-    question: "Moona likes Eric, and Eric likes floorball and table tennis",
+    question: "Eric likes floorball and table tennis",
     answers: {
-      a: "Moona tykkää Ericistä, ja Eric tykkää pingiksestä ja lentopallosta",
-      b: "Moona rakastaa Ericiä, ja Eric rakastaa salibandystä ja pingiksestä",
-      c: "Moona tykkää Ericistä, ja Eric tykkää pöytätenniksestä ja teniksestä",
-      d: "Moona tykkää Ericistä, ja Eric tykkää salibandystä ja pingiksestä"
+      a: "Eric tykkää pingiksestä ja lentopallosta",
+      b: "Eric rakastaa salibandystä ja pingiksestä",
+      c: "Eric tykkää pöytätenniksestä ja teniksestä",
+      d: "Eric tykkää salibandystä ja pingiksestä"
     },
     correctAnswer: "d"
   },
@@ -261,6 +261,7 @@ const questions202511Y = [
     },
     correctAnswer: "b"
   },
+  /*
   {
     question: "Go and shout Calypso - Calypso is behind Moona",
     answers: {
@@ -290,7 +291,7 @@ const questions202511Y = [
       d: "Rölli is and listen Tuuli"
     },
     correctAnswer: "b"
-  },
+  },*/
   {
     question: "Roosa play card",
     answers: {
