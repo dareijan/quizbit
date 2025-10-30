@@ -105,7 +105,7 @@ const questions20251027 = [
 
 
 
-const questions202511X = [
+const questions202511X1 = [
   {
     question: "Come here Anni",
     answers: {
@@ -261,14 +261,13 @@ const questions202511Y = [
     },
     correctAnswer: "b"
   },
-  /*
   {
-    question: "Go and shout Calypso - Calypso is behind Moona",
+    question: "Go and shout Calypso Calypso is behind Moona",
     answers: {
-      a: "Mene ja huuda Calypsoa - Calypso on Moonan edessä",
-      b: "Mene ja ääntele Calypso - Calypso Moonaa kantaa",
-      c: "Huuda isosti Calypsoa - Calypso on Moonan takana",
-      d: "Elehdi äänekkäästi Calypsoa - Calypso on takana"
+      a: "Mene ja huuda Calypsoa Calypso on Moonan edessä",
+      b: "Mene ja ääntele Calypso Calypso Moonaa kantaa",
+      c: "Huuda isosti Calypsoa Calypso on Moonan takana",
+      d: "Elehdi äänekkäästi Calypsoa Calypso on takana"
     },
     correctAnswer: "a"
   },
@@ -291,7 +290,7 @@ const questions202511Y = [
       d: "Rölli is and listen Tuuli"
     },
     correctAnswer: "b"
-  },*/
+  },
   {
     question: "Roosa play card",
     answers: {
@@ -320,8 +319,8 @@ const questions202511Z = [
     answers: {
       a: "Aina kannattaa auttaa hamsteria",
       b: "Pöytä ja hamsteri ovat hyvä pieni pari",
-      c: "Auta ainiaan pientä",
-      d: "Auta pientä hamsteria joka on pöydän alla"
+      c: "Auta hamsteria pöydän päältä",
+      d: "Auta pientä hamsteria pöydän alla"
     },
     correctAnswer: "d"
   },
