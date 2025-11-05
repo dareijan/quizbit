@@ -1,20 +1,19 @@
-  
  (function(){
-    var images = [
-        "http://dareijan.github.io/quizbit/englanti/pics/lockinen.jpg", 
-        "http://dareijan.github.io/quizbit/englanti/pics/1.jpg",
-        "http://dareijan.github.io/quizbit/englanti/pics/2.jpg",
-        "http://dareijan.github.io/quizbit/englanti/pics/3.jpg"
-   ];
-   
-   var imgCount = images.length;
+    /*window.onload = function () {*/
 
-   var randNumber=Math.floor((Math.random() * imgCount) + 1);
+    var backgroundImg=[
+        "pics/1.jpg",
+        "pics/2.jpg",
+        "pics/3.jpg"
+        ]
 
-   imgURL = "url('" + images[randNumber-1] + "')";
+       /* setInterval(changeImage, 5000); */
+        var i = Math.floor((Math.random() * 3));
 
-   var body=document.getElementById('background');
-   body.style.backgroundImage=imgURL;
-   body.style.backgroundSize="100% auto";
-   body.style.backgroundRepeat="no-repeat";
- }());
+        /* yliajaa cssn*/
+        document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
+        document.body.style.backgroundRepeat="no-repeat";
+        document.body.style.backgroundPosition = "top center";
+        document.body.style.backgroundSize = "cover";
+
+}());

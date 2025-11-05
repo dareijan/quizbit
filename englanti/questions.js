@@ -216,8 +216,8 @@ const q2025Kappale4Ja5JaEnnenSitaTaas = [
     answers: {
       a: "Listen to Rambo",
       b: "Hear Ramboa",
-      c: "Litsen Rambo",
-      d: "Look Rambo"
+      c: "Litsen to Rambo",
+      d: "Look to Rambo"
     },
     correctAnswer: "a"
   },
@@ -255,7 +255,7 @@ const q2025Kappale4Ja5JaEnnenSitaTaas = [
     question: "Katso Calypsoa, se on Ericin",
     answers: {
       a: "Shout Calypso, it's Eric's",
-      b: "Look Calypso, it's Eric's",
+      b: "Look at Calypso, it's Eric's",
       c: "Looks Calypso, it is Eric",
       d: "Nice Calypso, Eric likes it"
     },

@@ -3,7 +3,7 @@
 body{
 	font-size: 30px;
 	font-family: 'Work Sans', sans-serif;
-	color: #333;
+	color: #000000;
   font-weight: 300;
   text-align: center;
   background-color: #f8f6f0;
@@ -22,10 +22,9 @@ h1{
   color: #fff;
 }
 .question{
-  font-weight: 500;
-  font-size:35px;
+  font-size:40px;
   margin-bottom: 30px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   letter-spacing: 5px;
   color:  #000000;
   border-color: #fff;
@@ -34,17 +33,17 @@ h1{
   #border: 1px solid black;
   background-color: #fff;
   background-position: center center;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .answers {
-  font-weight: 500;
+  font-size:40px;
   margin-bottom: 30px;
   padding: 25px;
   text-align: left;
   display: inline-block;
   outline: none;
   background-color: #f8f6f0;
-  opacity: 0.6;
+  opacity: 0.9;
   letter-spacing: 1px;
   color:  #000000;
 }
@@ -52,6 +51,15 @@ h1{
   display: block;
   margin-bottom: 20px;
   margin-bottom: 20px;
+}
+.tulokset {
+  font-size:40px;
+  margin-bottom: 30px;
+  padding: 25px;
+  text-align: left;
+  display: inline-block;
+  outline: none;
+  background-color: #f8f6f0;
 }
 button{
   font-family: 'Work Sans', sans-serif;
@@ -67,6 +75,19 @@ button{
 button:hover{
 	background-color:  rgb(108, 64, 105);
 }
+a.abutton{
+  font-family: 'Work Sans', sans-serif;
+	font-size: 50px;
+	background-color: rgb(157, 96, 153);
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+
 input[type=radio] {
   width: 27px;
   height: 27px;
@@ -99,13 +120,14 @@ input[type=radio]:checked {
   height: 500px;
   margin-top: 50px;
 }
+/*
 a {
   font-size: 45px;
   text-decoration: none;
   font-weight:800;
   color:  rgb(157, 96, 153);
-  text-decoration: underline;
-
+  /*text-decoration: underline;*/
+/*
   color:  #252525;
   border-color: #fff;
  # padding: 0.5em;
@@ -115,6 +137,8 @@ a {
   background-position: center center;
   opacity: 0.7;
 }
+*/
+
 a:hover {
    color: rgb(108, 64, 105);
 }
@@ -127,8 +151,10 @@ html {
 #background {
   width: 100%;
   height: 100%;
-  background: url("pics/lockinen.jpg");no-repeat center center fixed;
- #background-color: rgba(111, 111, 111, 0.6);
+   /*
+ background: url("pics/lockinen.jpg");no-repeat center center fixed;
+  #background-color: rgba(111, 111, 111, 0.6);
+  */
   background-blend-mode: lighten;
   -webkit-background-size: cover;
   -moz-background-size: cover;

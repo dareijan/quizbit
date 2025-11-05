@@ -96,10 +96,10 @@
     // show number of correct answers out of total
 
     if (myQuestions.length != numCorrect) {
-      resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä. <br><br>Voit siirtyä edellisiin kysymyksiin <br>nähdäksesi mitkä kannattaa korjata. <br><br>Vastausten väri vaihtuu oikeaksi vasta menemällä <br>loppuun uudestaan ja valitsemalla Tarkista<br>`;
+      resultsContainer.innerHTML = `<br><div class=tulokset>${numCorrect} oikein ${myQuestions.length} kysymyksestä. <br><br>Voit siirtyä edellisiin kysymyksiin <br>nähdäksesi mitkä kannattaa korjata. <br><br>Vastausten väri vaihtuu oikeaksi vasta menemällä <br>loppuun uudestaan ja valitsemalla Tarkista<br></div>`;
 
     } else {
-      resultsContainer.innerHTML = `<br>${numCorrect} oikein ${myQuestions.length} kysymyksestä`;
+      resultsContainer.innerHTML = `<br><div class=tulokset>${numCorrect} oikein ${myQuestions.length} kysymyksestä</div>`;
     }
 
 
