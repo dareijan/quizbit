@@ -15,7 +15,7 @@
         first_visit = true;
         //localStorage.setItem('oltiin täällä', 1);
         if(!localStorage.getItem('myQuestions')){
-          const questions = JSON.stringify(questions20251027EnsimmainenKoe)
+          const questions = JSON.stringify(q20251027EnsimmainenKoe)
           localStorage.setItem('myQuestions', questions);
         }
 
@@ -169,23 +169,23 @@ function loader(visaparameter) {
 
   // put quizes here
   switch (visa) {
-      case "questions20251027EnsimmainenKoe":
-        questionsObject = questions20251027EnsimmainenKoe;
+      case "q20251027EnsimmainenKoe":
+        questionsObject = q20251027EnsimmainenKoe;
         break;
-      case "questions2025Kappale4Ja5JaVahan8ia":
-        questionsObject = questions2025Kappale4Ja5JaVahan8ia;
+      case "q2025Kappale4Ja5JaVahan8ia":
+        questionsObject = q2025Kappale4Ja5JaVahan8ia;
         break;
-      case "questions2025Kappale4Ja5JaEnnenSitaTaas":
-        questionsObject = questions2025Kappale4Ja5JaEnnenSitaTaas;
+      case "q2025Kappale4Ja5JaEnnenSitaTaas":
+        questionsObject = q2025Kappale4Ja5JaEnnenSitaTaas;
         break;
-      case "questions2025Kappale4Ja5JaEnnenSitaLisaa":
-        questionsObject = questions2025Kappale4Ja5JaEnnenSitaLisaa;
+      case "q2025Kappale4Ja5JaEnnenSitaLisaa":
+        questionsObject = q2025Kappale4Ja5JaEnnenSitaLisaa;
         break;      
-      case "questions2025Unit2Kappale4":
-        questionsObject = questions2025Unit2Kappale4;
+      case "q2025Unit2Kappale4":
+        questionsObject = q2025Unit2Kappale4;
         break;      
-      case "questions2025Kappale5":
-        questionsObject = questions2025Kappale5;
+      case "q2025Kappale5":
+        questionsObject = q2025Kappale5;
         break;    
   }
   const questions = JSON.stringify(questionsObject);
