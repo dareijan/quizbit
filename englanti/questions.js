@@ -325,42 +325,42 @@ const q2025Kappale4Ja5JaEnnenSitaLisaa = [
     correctAnswer: "d"
   },
   {
-    question: "Nikita on nopea, Rocky hidas, Star ei ole hidas",
+    question: "Nikita on nopea Rocky hidas Star ei ole hidas",
     answers: {
-      a: "Nikita is fat, Rocky is young, Star is not slow",
-      b: "Nikita isn't fast, Rocky isn't young, Star is slow",
-      c: "Nikita is fast, Rocky is slow, Star isn't slow",
-      d: "Nikita is fast, Rocky is fast, Star isn't slow"
+      a: "Nikita is fat Rocky is young Star is not slow",
+      b: "Nikita isn't fast Rocky isn't young Star is slow",
+      c: "Nikita is fast Rocky is slow Star isn't slow",
+      d: "Nikita is fast Rocky is fast Star isn't slow"
     },
     correctAnswer: "c"
   },
   {
-    question: "Nikita ei tule, hän on piilosilla",
+    question: "Nikita ei tule hän on piilosilla",
     answers: {
-      a: "Nikita does not come, she in strong",
-      b: "Nikita does not come, she is hiding",
-      c: "ikita does not come, she plays hide-seek",
-      d: "ikita does not come, she plays hide-and-seek"
+      a: "Nikita does not come she in strong",
+      b: "Nikita does not come she is hiding",
+      c: "ikita does not come she plays hide-seek",
+      d: "ikita does not come she plays hide-and-seek"
     },
     correctAnswer: "d"
   },
   {
-    question: "Anni ajattelee Ramboa, Rambo on nuori ja nopea",
+    question: "Anni ajattelee Ramboa Rambo on nuori ja nopea",
     answers: {
-      a: "Anni likes Rambo, Rambo is young and slow",
-      b: "Anni tinks Rambo, Rambo is young and fat",
-      c: "Anni thinks Rambo, Rambo is young and fast",
-      d: "Anni thinks Rambo, Rambo is young and last"
+      a: "Anni likes Rambo Rambo is young and slow",
+      b: "Anni tinks Rambo Rambo is young and fat",
+      c: "Anni thinks Rambo Rambo is young and fast",
+      d: "Anni thinks Rambo Rambo is young and last"
     },
     correctAnswer: "c"
   },
   {
-    question: "Mutta Star on vahva, ajatteletko että Star voi hypätä esteitä?",
+    question: "Mutta Star on vahva ajatteletko että Star voi hypätä esteitä?",
     answers: {
-      a: "But Star is fast, do you think Star can jump obstacles?",
-      b: "But Star is strong, do you think Star can jump obstacles?",
-      c: "But Star is stron, do you think Star can jump obstacles?",
-      d: "But Star is strong, do you think Star may jump obstacles?"
+      a: "But Star is fast do you think Star can jump obstacles?",
+      b: "But Star is strong do you think Star can jump obstacles?",
+      c: "But Star is stron do you think Star can jump obstacles?",
+      d: "But Star is strong do you think Star may jump obstacles?"
     },
     correctAnswer: "b"
   },
@@ -375,12 +375,12 @@ const q2025Kappale4Ja5JaEnnenSitaLisaa = [
     correctAnswer: "b"
   },
   {
-    question: "Nikita on nopea, Rocky on nuori, Star ei ole hidas",
+    question: "Nikita on nopea Rocky on nuori Star ei ole hidas",
     answers: {
-      a: "Nikita is fast, Rocky is young, Star is not slow",
-      b: "Nikita isn't fast, Rocky isn't young, Star is slow",
-      c: "Nikita is fast, Rocky is young, Star isn't slow",
-      d: "Nikita is fast, Rocky is fast, Star isn't slow"
+      a: "Nikita is fast Rocky is young Star is not slow",
+      b: "Nikita isn't fast Rocky isn't young Star is slow",
+      c: "Nikita is fast Rocky is young Star isn't slow",
+      d: "Nikita is fast Rocky is fast Star isn't slow"
     },
     correctAnswer: "c"
   },
@@ -395,12 +395,12 @@ const q2025Kappale4Ja5JaEnnenSitaLisaa = [
     correctAnswer: "d"
   },
   {
-    question: "En se on vanha peli, pidän pingiksestä",
+    question: "En se on vanha peli pidän pingiksestä",
     answers: {
-      a: "No it's an old game, I like table tennis",
-      b: "No it is an old game, I like badminton",
-      c: "No it is an old game, I shout floorball",
-      d: "No it's an old game, I like tag"
+      a: "No it's an old game I like table tennis",
+      b: "No it is an old game I like badminton",
+      c: "No it is an old game I shout floorball",
+      d: "No it's an old game I like tag"
     },
     correctAnswer: "a"
   }
@@ -409,7 +409,7 @@ const q2025Kappale4Ja5JaEnnenSitaLisaa = [
 
 
 const q2025Unit2Kappale4 =
-  [{ "question": "Siiri tanssitaan", "answers": { "a": "Siiri come dance", "b": "Siiri let's dance", "c": "Siiri get dance", "d": "Siiri go dance" }, "correctAnswer": "b" }, { "question": "Pystytkö sinä tanssimaan myös Emmi?", "answers": { "a": "Can you skate too Emmi?", "b": "Can you ski too Emmi?", "c": "Can you dance too Emmi?", "d": "Can you play the piano too Emmi?" }, "correctAnswer": "c" }, { "question": "En mutta voin katsoa kun tanssit", "answers": { "a": "No but I can shout you dance", "b": "No but I can help you dance", "c": "No but I can listen you dance", "d": "No but I can look you dance" }, "correctAnswer": "d" }, { "question": "Minä nauran mutta sinä Emmi hymyile", "answers": { "a": "I smile but you Emmi talk", "b": "I listen but you Emmmi smile", "c": "I laugh but you Emmi smile", "d": "I laugh but you Emmi ask" }, "correctAnswer": "c" }, { "question": "Kiva viikonloppu, Emmi pelaa jääkiekkoa", "answers": { "a": "Nice weekend, Emmi plays guitar", "b": "Nice geekend, Emmi plays floorbal", "c": "Nice weekend, Emmi plays ice hockey", "d": "Nice weekend, Emmi skates" }, "correctAnswer": "c" }, { "question": "Minä pidän myös jääkiekosta, pitääkö Eric?", "answers": { "a": "I talk ice hockey too, does Eric?", "b": "I like ice hockey too, does Eric?", "c": "I play ice hockey too, does Eric?", "d": "I play hockey too, do Eric?" }, "correctAnswer": "b" }, { "question": "Ajattele piirtämistä se on hidas urheilulaji", "answers": { "a": "Listen drawing, it is slow sport", "b": "Shout drawing, it is fast sport", "c": "Think drawing, it is slow sport", "d": "Think gnawling, it is slow sport" }, "correctAnswer": "c" }, { "question": "Emmi tule piirtämään, paperi on pöydän päällä", "answers": { "a": "Emmi go draw, the paper is behind the table", "b": "Emmi let's draw, the paper is behind the table", "c": "Emmi come to draw, the paper is on the table", "d": "Emmi come to think, the paper is on the table" }, "correctAnswer": "c" }, { "question": "Kiitos mutta ajattelen kirjoittavani", "answers": { "a": "Thank but I look I read", "b": "Thank you but I think I dance", "c": "Thank you but I think I write", "d": "Thank you but I think I draw" }, "correctAnswer": "c" }, { "question": "Siiri viulu on tuolin takana", "answers": { "a": "Siiri the baseball is behind the chair", "b": "Siiri the drums are behind the chair", "c": "Siiri the piano is behind the chair", "d": "Siiri the violin is behind the chair" }, "correctAnswer": "d" }];
+  [{ "question": "Siiri tanssitaan", "answers": { "a": "Siiri come dance", "b": "Siiri let's dance", "c": "Siiri get dance", "d": "Siiri go dance" }, "correctAnswer": "b" }, { "question": "Pystytkö sinä tanssimaan myös Emmi?", "answers": { "a": "Can you skate too Emmi?", "b": "Can you ski too Emmi?", "c": "Can you dance too Emmi?", "d": "Can you play the piano too Emmi?" }, "correctAnswer": "c" }, { "question": "En mutta voin katsoa kun tanssit", "answers": { "a": "No but I can shout you dance", "b": "No but I can help you dance", "c": "No but I can listen you dance", "d": "No but I can look you dance" }, "correctAnswer": "d" }, { "question": "Minä nauran mutta sinä Emmi hymyile", "answers": { "a": "I smile but you Emmi talk", "b": "I listen but you Emmmi smile", "c": "I laugh but you Emmi smile", "d": "I laugh but you Emmi ask" }, "correctAnswer": "c" }, { "question": "Kiva viikonloppu Emmi pelaa jääkiekkoa", "answers": { "a": "Nice weekend Emmi plays guitar", "b": "Nice geekend Emmi plays floorbal", "c": "Nice weekend Emmi plays ice hockey", "d": "Nice weekend, Emmi skates" }, "correctAnswer": "c" }, { "question": "Minä pidän myös jääkiekosta, pitääkö Eric?", "answers": { "a": "I talk ice hockey too does Eric?", "b": "I like ice hockey too does Eric?", "c": "I play ice hockey too, does Eric?", "d": "I play hockey too do Eric?" }, "correctAnswer": "b" }, { "question": "Ajattele piirtämistä se on hidas urheilulaji", "answers": { "a": "Listen drawing it is slow sport", "b": "Shout drawing it is fast sport", "c": "Think drawing it is slow sport", "d": "Think gnawling it is slow sport" }, "correctAnswer": "c" }, { "question": "Emmi tule piirtämään paperi on pöydän päällä", "answers": { "a": "Emmi go draw the paper is behind the table", "b": "Emmi let's draw the paper is behind the table", "c": "Emmi come to draw the paper is on the table", "d": "Emmi come to think the paper is on the table" }, "correctAnswer": "c" }, { "question": "Kiitos mutta ajattelen kirjoittavani", "answers": { "a": "Thank but I look I read", "b": "Thank you but I think I dance", "c": "Thank you but I think I write", "d": "Thank you but I think I draw" }, "correctAnswer": "c" }, { "question": "Siiri viulu on tuolin takana", "answers": { "a": "Siiri the baseball is behind the chair", "b": "Siiri the drums are behind the chair", "c": "Siiri the piano is behind the chair", "d": "Siiri the violin is behind the chair" }, "correctAnswer": "d" }];
 
 
-const q2025Kappale5 = [{ question: "Vastaa englanniksi; Voiko Rambo ja Elli uida?", answers: { a: "No, hey can not", b: "No they can't", c: "No they can can", d: "Yes hey can" }, "correctAnswer": "b"}, {question: "Vastaa englanniksi; Voiko Rambo hyppiä esteitä?", answers: { a: "No he cannu", b: "No she can't", c: "No she can nt", d: "Yes he can" }, "correctAnswer": "d"}, {"question": "Ratsastaako Elli Silverillä? Kysytään!", answers: { a: "Does Elli ride Silver? Let's ask!", b: "Do Elli hide Silver? Let's ask!", c: "Does Elli ride Silver? Let ask!", d: "Does Elli rade Silver? Let's ask!" }, "correctAnswer": "a"}, {"question":"Mikä oli Ellin hevosen nimi ?", answers: { a: "Hat was Elli's horse name?", b: "What was Ellis horses name?", c: "What is Elli's horse's name?", d: "What is Elli's horses name ? " }, "correctAnswer": "c"}, {"question":"Puhutaan, sanoi Anni", answers: { a: "Get talk, said Annu", b: "Let's go, said Anni", c: "Let's shout, said Anni", d: "Let's talk, said Anni" }, "correctAnswer": "d"}, {"question": "Please Elli don't shout to Felix", answers: { a: "Pyydän Elli älä puhu Felixille", b: "Pyydän Elli älä huuda Felixille", c: "Pyydän Elli huuda Felixille", d: "Pyydän Elli älä painosta Felixiä" }, "correctAnswer": "b"}, {"question": "Tule Pompula, hypätään esteitä", answers: { a: "Come Pompula, let's jump obstacles", b: "Go Pompula, let's jump obstacles", c: "Come Pompula, let s jump obstacles", d: "Come Pompula, let jump obstacles" }, "correctAnswer": "a"}, {"question": "Missä on Pompulan yksi hevosenkenkä ? ", answers: { a: "Where is Pompula's hoseshoe? ", b: "Where is Pompula once horseshoe ? ", c: "Here is Pompula one horseshoe ? ", d: "Where is Pompula's horseshoe?" }, "correctAnswer": "d"}, {"question": "Cash ja minä menemme talliin, olemme melkein perillä", answers: { a: "Cash and I go to table, we are almost there", b: "Cash and I go to the stable, we are almost here", c: "Cash and I go to the stable, we are almost there", d: "Cash an me go to the stable, we are almost there" }, "correctAnswer": "c"}, {"question":"Fiona pidätkö porkkanoista vai perunoista?", answers: { a: "Fiona do you like charriots or potatoes?", b: "Fiona you like cars or potatoes?", c: "Fiona do you like carrots or potatoes?", d: "Fiona like you carrots or potatoes" }, correctAnswer: "c"}]
+const q2025Kappale5 = [{ question: "Vastaa englanniksi; Voiko Rambo ja Elli uida?", answers: { a: "No hey can not", b: "No they can't", c: "No they can can", d: "Yes hey can" }, "correctAnswer": "b"}, {question: "Vastaa englanniksi; Voiko Rambo hyppiä esteitä?", answers: { a: "No he cannu", b: "No she can't", c: "No she can nt", d: "Yes he can" }, "correctAnswer": "d"}, {"question": "Ratsastaako Elli Silverillä? Kysytään!", answers: { a: "Does Elli ride Silver? Let's ask!", b: "Do Elli hide Silver? Let's ask!", c: "Does Elli ride Silver? Let ask!", d: "Does Elli rade Silver? Let's ask!" }, "correctAnswer": "a"}, {"question":"Mikä oli Ellin hevosen nimi ?", answers: { a: "Hat was Elli's horse name?", b: "What was Ellis horses name?", c: "What is Elli's horse's name?", d: "What is Elli's horses name ? " }, "correctAnswer": "c"}, {"question":"Puhutaan sanoi Anni", answers: { a: "Get talk said Annu", b: "Let's go said Anni", c: "Let's shout said Anni", d: "Let's talk said Anni" }, "correctAnswer": "d"}, {"question": "Please Elli don't shout to Felix", answers: { a: "Pyydän Elli älä puhu Felixille", b: "Pyydän Elli älä huuda Felixille", c: "Pyydän Elli huuda Felixille", d: "Pyydän Elli älä painosta Felixiä" }, "correctAnswer": "b"}, {"question": "Tule Pompula, hypätään esteitä", answers: { a: "Come Pompula let's jump obstacles", b: "Go Pompula let's jump obstacles", c: "Come Pompula let's jump obstacles", d: "Come Pompula let jump obstacles" }, "correctAnswer": "a"}, {"question": "Missä on Pompulan yksi hevosenkenkä ? ", answers: { a: "Where is Pompula's hoseshoe? ", b: "Where is Pompula once horseshoe ? ", c: "Here is Pompula one horseshoe ? ", d: "Where is Pompula's horseshoe?" }, "correctAnswer": "d"}, {"question": "Cash ja minä menemme talliin olemme melkein perillä", answers: { a: "Cash and I go to table we are almost there", b: "Cash and I go to the stable we are almost here", c: "Cash and I go to the stable we are almost there", d: "Cash an me go to the stable we are almost there" }, "correctAnswer": "c"}, {"question":"Fiona pidätkö porkkanoista vai perunoista?", answers: { a: "Fiona do you like charriots or potatoes?", b: "Fiona you like cars or potatoes?", c: "Fiona do you like carrots or potatoes?", d: "Fiona like you carrots or potatoes" }, correctAnswer: "c"}]

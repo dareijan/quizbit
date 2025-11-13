@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body{
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Work Sans', sans-serif;
 	color: #000000;
   font-weight: 300;
@@ -16,14 +16,14 @@ body{
 h1{
   font-weight: 300;
   margin: 0px;
-  padding: 12px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 30px;
   background-color: #444;
   color: #fff;
 }
 .question{
-  font-size:40px;
-  margin-bottom: 30px;
+  font-size:35px;
+  margin-bottom: 20px;
  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   letter-spacing: 5px;
   color:  #000000;
@@ -33,12 +33,12 @@ h1{
   #border: 1px solid black;
   background-color: #fff;
   background-position: center center;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 .answers {
-  font-size:40px;
-  margin-bottom: 30px;
-  padding: 25px;
+  font-size:30px;
+  margin-bottom: 15px;
+  padding: 15px;
   text-align: left;
   display: inline-block;
   outline: none;
@@ -53,9 +53,9 @@ h1{
   margin-bottom: 20px;
 }
 .tulokset {
-  font-size:40px;
-  margin-bottom: 30px;
-  padding: 25px;
+  font-size:25px;
+  margin-bottom: 25px;
+  padding: 20px;
   text-align: left;
   display: inline-block;
   outline: none;
@@ -63,7 +63,7 @@ h1{
 }
 button{
   font-family: 'Work Sans', sans-serif;
-	font-size: 50px;
+	font-size: 40px;
 	background-color: rgb(157, 96, 153);
 	color: #fff;
 	border: 0px;
@@ -77,8 +77,8 @@ button:hover{
 }
 a.abutton{
   font-family: 'Work Sans', sans-serif;
-	font-size: 50px;
-	background-color: rgb(157, 96, 153);
+	font-size: 40px;
+	background-color: rgb(186, 105, 43);
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
@@ -117,8 +117,8 @@ input[type=radio]:checked {
 }
 .quiz-container{
   position: relative;
-  height: 500px;
-  margin-top: 50px;
+  height: 400px;
+  margin-top: 20px;
 }
 /*
 a {
@@ -164,7 +164,7 @@ html {
   background-position: center center;
   -webkit-animation: myfirst 3s ; /* Chrome, Safari, Opera */
   animation: myfirst s ;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {

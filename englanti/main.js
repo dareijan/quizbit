@@ -1,5 +1,8 @@
 (function(){
-  
+  //setTimeout(function(){
+  // window.location.reload(8);
+  //}, 5000);
+
   // Functions
   function buildQuiz(){
     try {
