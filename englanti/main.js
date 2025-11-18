@@ -190,7 +190,12 @@ function loader(visaparameter) {
       case "q2025Kappale5":
         questionsObject = q2025Kappale5;
         break;    
+      case "questions2025Vahan6Ja7":
+        questionsObject = questions2025Vahan6Ja7;
+        break;   
   }
+
+  
   const questions = JSON.stringify(questionsObject);
 
   localStorage.setItem('myQuestions', questions);
