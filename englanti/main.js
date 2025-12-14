@@ -193,6 +193,10 @@ function loader(visaparameter) {
       case "questions2025Vahan6Ja7":
         questionsObject = questions2025Vahan6Ja7;
         break;   
+      case "questionsKappale58Koe1":
+        questionsObject = questionsKappale58Koe1;
+        break;
+     
   }
 
   
